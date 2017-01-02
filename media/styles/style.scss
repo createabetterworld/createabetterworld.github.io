@@ -1,0 +1,39 @@
+---
+# Main CSS file
+---
+
+@import "font-lato.scss";
+@import "../bootstrap/scss/bootstrap.scss";
+
+body {
+  min-height: 100vh;
+
+  font-family: 'Lato', sans-serif;
+  padding-top: 70px;
+
+  .navbar-brand {
+    .create, .a, .world { margin-right: 3px; }
+    .dot { color: #777; }
+  }
+
+  &.landing-page {
+    background-color: #070707;
+    background-image: url(../images/bg-earth.jpg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding-top: 20px;
+
+    @media screen and (orientation: portrait) {
+      background-size: cover;
+    }
+
+    .jumbotron {
+      text-align: center;
+      background-color: rgba(7,7,7,0.6);
+      color: #fff;
+    }
+  }
+}

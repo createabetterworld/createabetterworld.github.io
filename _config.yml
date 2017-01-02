@@ -1,0 +1,10 @@
+title: Create A Better World
+source: .
+sass:
+  sass_dir: media/styles
+  style: compressed
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
